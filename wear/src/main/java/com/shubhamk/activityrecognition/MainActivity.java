@@ -43,7 +43,7 @@ public class MainActivity extends WearableActivity {
     private static final String NEW_LINE_SEPARATOR = "\n";
     String fileName;
     RadioGroup radioGroup;
-    String[] act = {"Walking","Climbing","Sitting","Running","Cycling","Sleeping"};
+    String[] act = {"Walking","Jogging","Sitting","Standing"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,7 +55,7 @@ public class MainActivity extends WearableActivity {
         sensor2 = sensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE);
         radioGroup = findViewById(R.id.rg);
         radioGroup.removeAllViews();
-        for(int i = 0;i <6;i++){
+        for(int i = 0;i < 4;i++){
             RadioButton radioButton = new RadioButton(this);
             radioButton.setText(act[i]);
             radioGroup.addView(radioButton);

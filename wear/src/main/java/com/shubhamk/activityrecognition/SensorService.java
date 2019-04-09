@@ -30,9 +30,9 @@ public class SensorService extends Service implements SensorEventListener {
         sensor_magnet = sensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
 
         sensorManager.registerListener(this, sensor_acc,SensorManager.SENSOR_DELAY_FASTEST);
-        sensorManager.registerListener(this,sensor_gyro,SensorManager.SENSOR_DELAY_FASTEST);
-        sensorManager.registerListener(this,sensor_heartrate,SensorManager.SENSOR_DELAY_FASTEST);
-        sensorManager.registerListener(this,sensor_magnet,SensorManager.SENSOR_DELAY_FASTEST);
+        //sensorManager.registerListener(this,sensor_gyro,SensorManager.SENSOR_DELAY_FASTEST);
+        //sensorManager.registerListener(this,sensor_heartrate,SensorManager.SENSOR_DELAY_FASTEST);
+        //sensorManager.registerListener(this,sensor_magnet,SensorManager.SENSOR_DELAY_FASTEST);
 
     }
 
